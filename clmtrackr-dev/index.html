@@ -2,11 +2,11 @@
 <html lang="en">
 
 <head>
-	<title>Schemata</title>
-	<link rel="shortcut icon" tyoe="image/png" href="media/favicon.png">
+	<title>SCHEMATA</title>
+	<link rel="shortcut icon" tyoe="image/png" href="examples/media/favicon.png">
 	<meta charset="utf-8">
-	<link rel="stylesheet" type="text/css" href="dark.css">
-    <link rel="stylesheet" type="text/css" href="light.css">
+	<link rel="stylesheet" type="text/css" href="examples/dark.css">
+    <link rel="stylesheet" type="text/css" href="examples/light.css">
 
 	<script>
 		// getUserMedia only works over https in Chrome 47+, so we redirect to https. Also notify user if running from file.
@@ -32,13 +32,13 @@
 </head>
 
 <body>
-	<script src="./js/libs/utils.js"></script>
+	<script src="../examples/js/libs/utils.js"></script>
 	<script src="../build/clmtrackr.js"></script>
 	<script src="../models/model_pca_20_svm.js"></script>
-	<script src="./js/libs/Stats.js"></script>
-	<script src="./js/libs/d3.min.js"></script>
-	<script src="./js/emotion_classifier.js"></script>
-	<script src="./js/emotionmodel.js"></script>
+	<script src="../examples/js/libs/Stats.js"></script>
+	<script src="../examples/js/libs/d3.min.js"></script>
+	<script src="../examples/js/emotion_classifier.js"></script>
+	<script src="../examples/js/emotionmodel.js"></script>
 
 
 	<nav class="mainnavigation">
@@ -47,12 +47,36 @@
 				<p class="menu-item" id="instructions">INSTRUCTIONS</p>
 				<div class="menu-item-text" id="instructionsText">
 					<p>
-						Schemata responds to your facial expressions through a face tracking device. When enabling the
-						camera, make sure your camera is ready and that the face map snaps well on to face for the
-						typeface to interpolate properly. In case the green outlines are continuously jumping and are
-						not fixating to your face, please clip away any fringe and take off your glasses if possible.
-						Also, make sure your computer is not exposed to any kind of flickering light and is positioned
-						on a steady surface.
+                        <i>Schemata</i> responds your facial expressions through a face-tracking device. When enabling the camera, make sure your face is exposed to direct light and that 
+                        the face map snaps properly on to your face. This will help the typeface to function properly. </p>
+                       
+                     <p>
+                
+                        In case the green outlines are continuously jumping 
+                        and are not fixing onto your face, if applicable, please sweep away your fringe and remove your glasses. Also, please make sure your computer is not exposed 
+                        to any kind of flickering light and is positioned on a steady surface. 
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                       
 					</p>
 				</div>
 			</div>
@@ -60,29 +84,33 @@
 				<p class="menu-item" id="about">ABOUT</p>
 				<div class="menu-item-text" id="aboutText">
 					<p>
-						Schemata is a typeface that responds to facial expressions and emotions expressed by the reader.
-						Schemata’s purpose is to visualize the reader’s presence and to stay in dialog with them in
-						order to contrast conventional and hierarchical use of static typefaces. In conventional use,
-						authorities – may it be author or designer – choose typefaces and therefore, pre-contextualize
-						displayed content based on specific characteristic features of typefaces and therefore have
-						influence in the intuitive processes of content interpretation by the readership.
+						<i>Schemata</i> is a typeface that responds interactively and in real time to facial expressions and emotions expressed by 
+                        the reader. Its purpose is to draw attention to the reader and to stay in dialog with them in order to contrast and 
+                        highlight the conventional and hierarchical use of static typefaces. In conventional use, authorities, be it author 
+                        or designer, choose typefaces and, therefore, pre-contextualize displayed content based on specific characteristic 
+                        features of typefaces. They therefore influence and control intuitive processes of content interpretation. 
+                        <i>Schemata</i> examines the threshold of the reader and the author and recognizes a range of facial expressions. It reacts 
+                        by modifying its shapes using a face-tracking code enabled through the webcam and seeks to open dialogue on input/output, 
+                        interpretation as well as emotionality of typefaces.   
+
+					</p>
+                   
+					<p>
+                        
+                        <i>Schemata</i> is a display typeface, with a dramatic and exaggerated nature, acting out the multiplicity of reactions and interpretations 
+                        within its different forms, presenting words addressing hierarchies, as well as boundaries and ambiguous states of interpretation. 
 					</p>
 
 					<p>
-						Schemata is a typeface that functions only in the interaction with the reader, examining the
-						threshold of the reader and the author, opening dialogue on input and output, interpretation and
-						emotionality. Schemata has a dramatic and exaggerated nature, acting out the multiplicity of
-						reactions and interpretations within its different bodies. Schemata presents words that deal in
-						themselves with the non-absolute, questioning boundaries, ambiguous states as well as forms of
-						signification.
+						↗ <i>Schemata</i> will be available for download soon.
 					</p>
 
 					<p>
-						Typeface available for download coming soon.
-					</p>
-
-					<p>
-						CONTACT<br>Johanna Hammer<br>@_johanner<br>Johannahammer.com
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+						CONTACT<br>Johanna Hammer<br>@_johanner<br>johannahammer.com
 
 					</p>
 				</div>
@@ -94,10 +122,10 @@
 				<p class="menu-item" id="hide-camera">CAMERA</p>
 			</div>
 			<div class="menu-item-right" id="invertColoursButtons">
-				<img href="#" onclick="changeCSS('light.css', 0);" class="invertColoursButton"
-					src="./media/thumbnail_white-cropped.png" />
-				<img href="#" onclick="changeCSS('dark.css', 0);" class="invertColoursButton"
-					src="./media/thumbnail_black-cropped.png" />
+				<img href="#" onclick="changeCSS('examples/light.css', 0);" class="invertColoursButton"
+					src="../examples/media/thumbnail_white_cropped_2-02.png" />
+				<img href="#" onclick="changeCSS('examples/dark.css', 0);" class="invertColoursButton"
+					src="../examples/media/thumbnail_black_cropped_2-01.png" />
 			</div>
 		</div>
 	</nav>
@@ -341,16 +369,17 @@
 	<script>
 		var emotionText = document.getElementById("emotion-text");
 		var words = [
-			"SCHEMATA",     // 0    /   4 = 0 (0/4)
+            
 			"ARCHETYPES",    // 1    /   4 = 0 (1/4)
 			"SYSTEMS",     // 2    /   4 = 0 (2/4)
 			"AUTHORITIES",  // 3    /   4 = 0 (3/4)
-			"BOUNDARIES",
+			"SCHEMATA",
+            "BOUNDARIES",
 			"FIGURES",
 			"DEFINITIONS",
 			"OPINIONS",
-			"RULES",
-			"INTERPRETATIONS",
+			"RULES"
+		
 			// 4    /   4 = 1 (0/4)
 		];
 

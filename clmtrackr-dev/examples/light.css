@@ -1,7 +1,7 @@
 /* @import url(https://fonts.googleapis.com/css?family=Lato:300italic,700italic,300,700); */
 			
 :root {
-	--bg-color: rgb(235, 235, 235);
+	--bg-color: rgb(255, 255, 255);
 	--font-color: black;
   }
 
@@ -11,21 +11,53 @@
 			@font-face {
 				font-family: 'Schemata';
 				/* src: url(fonts/SourceSansVariable-Roman.otf.woff2) format("truetype-variations"); */
-				src: url(fonts/SchemataGX.ttf) format("truetype-variations");
-				font-family: 'Ortica';
-				src: url(fonts/Ortica-Light.woff2) format("truetype-variations"); */
+				src: url(fonts/SchemataGX.ttf) format("truetype-variations")
+				
+			}
+			 @font-face {
+		
+				font-family: 'MonumentGrotesk';
+				src: url(fonts/MonumentGrotesk-Regular.woff2) format("truetype-variations"); 
+				
+			
+			}
+			@font-face {
+		
+				font-family: 'Surt';
+				src: url(fonts/Surt-Light.woff2) format("truetype-variations"); 
+				
+			
+			}
+			@font-face {
+		
+				font-family: 'Apoc';
+				src: url(fonts/Apoc-Revelations.woff2) format("truetype-variations"); 
+				
+			}
+
+			@font-face {
+		
+				font-family: 'HelveticaNeue';
+				src: url(fonts/HelveticaNeue-Light-08.ttf) format("truetype-variations"); 
+				
+			}
+			@font-face {
+		
+				font-family: 'Oroban';
+				src: url(fonts/Oroban-Hermonthica.woff2) format("truetype-variations"); 
 				
 			}
 
 			.mainnavigation {
 				position: fixed; top:0; height: 50px;
-				font-family: 'Ortica';
+				font-family: 'MonumentGrotesk';
 				width: 100vw;
                 box-sizing: border-box;
 				display: inline-flex;
 				flex-direction: row;
                 padding: 0 10px;
-                justify-content: space-between;	
+				justify-content: space-between;	
+				text-shadow: 0 0 3px rgb(53, 49, 49);
             }
             .menu-item {
                 cursor: pointer;
@@ -34,7 +66,9 @@
             }
             .menu-item:hover {
                 opacity:1; 
-            }
+			}
+		
+	
 
 			#left-menu-group {
 				display: inline-flex;
@@ -77,13 +111,17 @@
 			.menu-item-text {
 				display: none;
 				position: absolute;
-    left: 0;
-    top: 0;
-    padding: 60px 10px 0 10px;
-    width: 40%;
-    background: #ffffff6e;
-    height: 100vh;
-    z-index: -999;
+				left: 0;
+				top: 0;
+				padding: 60px 10px 0 10px;
+				width: 40%;
+				background: #ffffff00;
+				height: 90vh;
+				z-index: -999;
+				font-size: 1.5rem;
+				line-height: 1.4rem;
+				overflow-x: hidden;
+				overflow-y: scroll;
 				
             }
 
@@ -187,7 +225,7 @@
 			/* Hammer */
 
 			#landing {
-			    background: url(./media/Landing1.jpg) no-repeat center center fixed;
+			    background: url(./media/Landing4.png) no-repeat center center fixed;
     background-size: cover;
     height: 100vh;
     width: 100vw;
@@ -195,7 +233,7 @@
 	pointer-events: none;
     top: 0;
     z-index: 999999999999999999999999!important;
-    border: 2px solid red;
+    border: 2px solid rgba(255, 0, 0, 0);
 
 			}
 
@@ -213,7 +251,8 @@
     /* border: 1px solid; */
     display: flex;
     align-items: center;
-    justify-content: center;
+	justify-content: center;
+
 			}
 
 			#emotion-text.sad {
